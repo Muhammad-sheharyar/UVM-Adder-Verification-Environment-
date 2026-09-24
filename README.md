@@ -6,54 +6,53 @@ This is a complete UVM (Universal Verification Methodology) based verification e
 ## 📁 Project Structure
 uvm-adder-verification/
 │
-├── rtl/ # RTL Design Files
-│ └── design.sv # 4-bit Adder DUT
+├── rtl/                          # RTL Design Files
+│   └── design.sv                 # 4-bit Adder DUT
 │
-├── tb/ # Testbench Files
-│ ├── interface.sv # Adder Interface (a, b, y signals)
-│ ├── driver.sv # UVM Driver class
-│ ├── agent.sv # UVM Agent class
-│ ├── environment.sv # UVM Environment class
-│ ├── random_test.sv # UVM Test class
-│ └── testbench.sv # Top module (Testbench)
+├── tb/                           # Testbench Files
+│   ├── interface.sv              # Adder Interface (a, b, y signals)
+│   ├── driver.sv                 # UVM Driver class
+│   ├── agent.sv                  # UVM Agent class
+│   ├── environment.sv            # UVM Environment class
+│   ├── random_test.sv            # UVM Test class
+│   └── testbench.sv              # Top module (Testbench)
 │
-└── sim/ # Simulation Files
-├── Makefile # Compile, Sim, GUI commands
-├── build.flist # List of files for compilation
-└── out/ # Simulation output (gitignored)
+└── sim/                          # Simulation Files
+    ├── Makefile                  # Compile, Sim, GUI commands
+    ├── build.flist               # List of files for compilation
+    └── out/                      # Simulation output (gitignored)
 
 ---
 
 ## 🧩 UVM Architecture
-bash
-┌─────────────────────────┐
-│ test │
-│ (uvm_test) │
-└───────────┬─────────────┘
-│
-┌───────────▼─────────────┐
-│ env │
-│ (uvm_env) │
-└───────────┬─────────────┘
-│
-┌───────────▼─────────────┐
-│ agent │
-│ (uvm_agent) │
-└───────────┬─────────────┘
-│
-┌───────────▼─────────────┐
-│ driver │
-│ (uvm_driver) │
-└───────────┬─────────────┘
-│
-┌───────────▼─────────────┐
-│ adder_if │
-│ (Interface) │
-└───────────┬─────────────┘
-│
-┌───────────▼─────────────┐
-│ adder (DUT) │
-└─────────────────────────┘
+                ┌─────────────────────────┐
+                │         test            │
+                │   (uvm_test)            │
+                └───────────┬─────────────┘
+                            │
+                ┌───────────▼─────────────┐
+                │         env             │
+                │   (uvm_env)             │
+                └───────────┬─────────────┘
+                            │
+                ┌───────────▼─────────────┐
+                │        agent            │
+                │   (uvm_agent)           │
+                └───────────┬─────────────┘
+                            │
+                ┌───────────▼─────────────┐
+                │        driver           │
+                │   (uvm_driver)          │
+                └───────────┬─────────────┘
+                            │
+                ┌───────────▼─────────────┐
+                │      adder_if           │
+                │     (Interface)         │
+                └───────────┬─────────────┘
+                            │
+                ┌───────────▼─────────────┐
+                │       adder (DUT)       │
+                └─────────────────────────┘
 
 ---
 
