@@ -4,6 +4,7 @@ This is a complete UVM (Universal Verification Methodology) based verification e
 ---
 
 ## 📁 Project Structure
+```
 uvm-adder-verification/
 │
 ├── rtl/                          # RTL Design Files
