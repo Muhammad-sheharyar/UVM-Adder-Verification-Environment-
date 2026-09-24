@@ -94,7 +94,11 @@ UVM_INFO driver.sv(28) @ 30: drv [drv] a:15 + b:7 = y:22
 ````
 ### 🛠️ Tools & Technologies
 Language: SystemVerilog
+
 Methodology: UVM 1.2
+
 Simulator: Synopsys VCS (L-2016.06)
+
 Waveform Viewer: DVE
+
 Editor: VS Code with Verilog-HDL/SystemVerilog extension
