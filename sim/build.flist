@@ -1,0 +1,28 @@
+// include directories
+
++incdir+../rtl
++incdir+../tb
+
+// include design files
+
+../rtl/design.sv
+
+
+// include interface
+
+../tb/interface.sv 
+
+// include tb files
+
+../tb/driver.sv 
+../tb/agent.sv 
+../tb/environment.sv 
+
+//../tb/default_rd_test.sv 
+//../tb/random_test.sv 
+../tb/random_test.sv
+
+
+// include tb_top
+
+../tb/testbench.sv 
