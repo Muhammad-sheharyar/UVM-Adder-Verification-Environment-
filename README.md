@@ -1,7 +1,6 @@
 ### UVM Adder Verification Environment.
----
-This is a complete UVM (Universal Verification Methodology) based verification environment that verifies a **4-bit Adder** DUT (Design Under Test). It includes standard UVM components such as Driver, Agent, Environment, and Test.
----
+
+This is a complete UVM (Universal Verification Methodology) based verification environment that verifies a 4-bit Adder DUT (Design Under Test). It includes standard UVM components such as Driver, Agent, Environment, and Test.
 
 ## 📁 Project Structure
 ```
