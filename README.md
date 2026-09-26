@@ -62,19 +62,19 @@ uvm-adder-verification/
 |--------------|-------------------|----------------------------------------------------------|
 | **DUT**      | `design.sv`       | 4-bit Adder (`y = a + b`)                                |
 | **Interface**| `interface.sv`    | Virtual interface connecting DUT and TB                  |
-| **Driver**   | `driver.sv`       | Random values generate karke DUT ko drive karta hai      |
-| **Agent**    | `agent.sv`        | Driver ko encapsulate karta hai                          |
-| **Env**      | `environment.sv`  | Agent ko contain karta hai                               |
+| **Driver**   | `driver.sv`       | Generate Random values and drive the DUT                 |
+| **Agent**    | `agent.sv`        | Encapsulate the drive                                    |
+| **Env**      | `environment.sv`  | Contain the agent                                        |
 | **Test**     | `random_test.sv`  | Top-level UVM test (`run_test("test")`)                  |
-| **Testbench**| `testbench.sv`    | Top module jo sab kuch instantiate karta hai             |
+| **Testbench**| `testbench.sv`    | Top module instantiate all                               |
 
 ---
 
 ## 🚀 How to Run
 
 ### Prerequisites
-- **VCS** (Synopsys) — UVM 1.2 support ke saath
-- **DVE** (Discovery Visualization Environment) — waveform ke liye
+- **VCS** (Synopsys) — With UVM 1.2 support 
+- **DVE** (Discovery Visualization Environment) — for waveform
 - **Make** utility
 
 ### Step 1: Compile
